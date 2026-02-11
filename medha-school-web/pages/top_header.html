@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MEDHA INTERNATIONAL SCHOOL</title>
+  <style>
+    body, html { margin: 0; padding: 0; overflow: hidden; height: 100%; }
+
+    .header {
+      display: flex;
+      height: 78%; 
+      background: linear-gradient(90deg, #1e8bb7, lightblue, #ecf7fc, lightblue, #1e8bb7);
+      justify-content: space-between; 
+      align-items: center;
+      color: navy;
+      font-family: 'Times New Roman', Times, serif;
+      padding: 0 15px; 
+    }
+
+    /* Side logos (1st and 3rd) */
+    .header-logo, .header-logo2 { 
+      height: 155px; 
+      width: auto; 
+      flex-shrink: 0; 
+    }
+    
+    /* --- THE MAIN CENTER LOGO --- */
+    .header-logo3 { 
+      height: 190px;        /* Taller than the others */
+      width: auto;          /* Maintains its circular/wide shape */
+      flex-basis: 300px;    /* Forces more horizontal width */
+      object-fit: contain;
+      flex-shrink: 0; 
+      margin: 0 10px; 
+    }
+
+    .title-block {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-shrink: 1;
+    }
+
+    .school-name {
+      font-size: 2.8rem; 
+      font-weight: 900;
+      margin: 0;
+      line-height: 0.9;
+    }
+
+    .location-name {
+      font-size: 2.5rem; 
+      font-weight: 900;
+      margin: 0;
+      letter-spacing: 5px;
+    }
+
+    .address {
+      text-align: right;
+      color: navy;
+      font-weight: bold;
+      font-family: "Papyrus", fantasy;
+      font-size: 1rem; 
+      line-height: 2.2;
+      flex-shrink: 0;
+    }
+
+    /* Marquee Sections */
+    .dark-bar { background: #104b63; height: 4px; width: 100%; }
+    .m-style {
+      display: block;
+      color: #135874;
+      font-weight: bold;
+      padding: 3px 0;
+      font-family: Arial, sans-serif;
+      font-size: 1.1rem;
+    }
+    .g1 { background: linear-gradient(180deg, #76c8e9, #caeaf6, #ecf7fc); }
+    .g2 { background: linear-gradient(180deg, #ecf7fc, #caeaf6, #76c8e9); }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <img src="school_logo.jpeg" alt="Logo" class="header-logo">
+    
+    <div class="title-block">
+      <p class="school-name">MEDHA<br>INTERNATIONAL<br>SCHOOL</p>
+    </div>
+
+    <img src="main_logo.jpeg" alt="Main Logo" class="header-logo3">
+    
+    <div class="title-block">
+      <p class="location-name">KURNOOL</p>
+    </div>
+
+    <img src="school_logo.jpeg" alt="Logo" class="header-logo2">
+    
+    <p class="address">
+      NEAR SKYLINE VILLAS, MAINROAD,<br>
+      KURNOOL, ANDHRA PRADESH<br>
+      PINCODE: 518001
+    </p>
+  </header>
+
+  <div class="dark-bar"></div>
+  <marquee class="m-style g1" direction="left">***** Learning Today... Leading Tomorrow...! *****</marquee>
+  <div class="dark-bar"></div>
+  <marquee class="m-style g2" direction="right">-------- Knowledge is Wisdom! --------</marquee>
+
+</body>
+</html>
